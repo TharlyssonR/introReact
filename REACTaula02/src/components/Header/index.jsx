@@ -12,24 +12,21 @@ function Header (){
              
              <img src={logo} alt="" />
              <nav>
-                <div>
-                <input type="text" placeholder='Pesquisar produto' />
-                <button className="search-btn">
-                <i className="fa fa-search"></i>
-                </button>
-                </div>
                 
-                <div>
-                <a href="">Cadastre-se</a>
-                <button>Entrar</button>
+                <input  className={styles.headerInput} type="text" placeholder='Pesquisar produto' />
+                <button className={styles.headerSeach}></button>
+                
+                
+                <a className={styles.headerA} href="">Cadastre-se</a>
+                <button className={styles.headerLogin} >Entrar</button>
                 <a href=""><img src={carrinho} alt="" /></a>
 
-                </div>
+                
                 
              </nav> 
            </div>
            <div className={styles.headerBottom}> 
-               <Link to="/home">Home</Link>
+               <Link className={styles.headerLinks} to="/home">Home</Link>
                <Link to="/home">Produtos</Link>
                <Link to="/home">Categorias</Link>
                <Link to="/home">Meus pedidos</Link>

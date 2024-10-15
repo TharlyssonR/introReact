@@ -1,5 +1,8 @@
 body{
-    background-color: aliceblue;
+    background-color: rgb(228, 233, 236);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0
 }
 
 .header{
@@ -21,11 +24,15 @@ body{
 }
 
 .header a{
-    text-decoration: none;
-    color: antiquewhite;
+    
+    color: rgb(51, 49, 49);
     padding-left: 1.5rem;
     font-size: 1.2rem;
+    margin-right: 15px;
 
+}
+.headerA{
+    text-decoration: underline;
 }
 
 .headerTop{
@@ -35,10 +42,32 @@ body{
     /* background-color: brown; */
 
 }
+.headerInput{
+    padding: 10px;
+    background-color: rgb(223, 217, 217);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    
+    
+}
+.headerLogin{
+    background-color: #D81B60; /* Cor rosa */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
 .headerBottom{
     display: flex;
     justify-content: start;
     padding: 10px 20px;
     background-color: #fff;
     border-bottom: 2px solid #eee;
+    margin-right: 15px;
+    color: #000;
+    text-decoration: none;
+    padding-bottom: 5px;
+    margin-top: auto;
 }
