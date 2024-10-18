@@ -5,16 +5,42 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import NavbarComponent from './components/navbar'
 import Header from './components/Header'
+import Saudacao from './components/saudacao/saudacao'
+import BotaoDinamico from './components/BotaoDinamico/Botaodinamico'
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom"
+import Login from './components/pages/Login'
+import HomePage from './components/pages/HomePage'
+// import ListaDeTenis from './components/ListaTenis/insex'
 
 
 
 function App() {
   
+  // const saldo =10
+  // const saldo2=12
 
   return (
     <>
       {/* <NavbarComponent/> */}
-      <Header/>
+      <Router>
+        <div>
+        <Header/>
+        <Routes>
+          <Route path='/home' element={<HomePage/>}/>
+          <Route path='/login' element={<Login/>}/>
+          <Route path='*' element={<HomePage/>}/>
+        
+        </Routes>
+
+        </div>
+      </Router>
+
+      {/* <ListaDeTenis/> */}
+      
+      {/* <Header/> */}
+      {/* <Saudacao nome="Fulano" saldo={saldo}/>
+      <Saudacao nome="bet" saldo={saldo2}/>
+      <BotaoDinamico cor = "blue "> enviar</BotaoDinamico> */}
       {/* <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />

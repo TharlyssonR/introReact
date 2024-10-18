@@ -1,8 +1,12 @@
+body{
+    background-color: aliceblue;
+}
+
 .header{
     width: 100%;
-    height: auto;
-    background-color: rgb(124, 114, 114);
-    color: aliceblue;
+    height: 150px;
+    background-color: white;
+    color: #0a0b0b;
     font-size: normal;
     display: flex;
     /* align-items: center;
@@ -11,9 +15,9 @@
     flex-direction: column;
 }
 
-.header span{
-    font-size: 1.5rem;
-    font-weight: bold;
+.header img{
+    margin-left: 46px;
+
 }
 
 .header a{
@@ -33,6 +37,8 @@
 }
 .headerBottom{
     display: flex;
-    align-items: flex-start;
-    /* background-color: green; */
+    justify-content: start;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #eee;
 }
